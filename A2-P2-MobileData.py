@@ -6,10 +6,35 @@
 # then calculate the cost based on that range’s cost. 
 
 #Student #:     
-#Student Name:  
+#Student Name:  Mathew Akunyili
 
 def main():
     # YOUR CODE STARTS HERE, each line must be indented (one tab)
+
+    # Program Title
+    print("Erewhon Mobile Data Plans")
+    print("")
+
+    # Ask user for data usage
+    dataUsage = float(input("Enter data usage (Mb): "))
+                      
+    # Calculations
+    if dataUsage <= 200:
+        totalCharge = 20
+    elif dataUsage <= 500:
+        roc = 0.105
+        totalCharge = roc * dataUsage
+    elif dataUsage <= 1000:
+        roc = 0.110
+        totalCharge = roc * dataUsage
+    else:
+        totalCharge = 118
+    
+     
+
+    # Print total charge
+    print(f"Total charge is: ${totalCharge:.2f}")
+
 
 
 
