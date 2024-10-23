@@ -19,10 +19,10 @@ def main():
     dataUsage = float(input("Enter data usage (Mb): "))
                       
     # Calculations
-    if dataUsage <= 200:
+    if dataUsage <= 200: #This ,meams if the data usage is lower or is also equal to 200 That is would hava a chare of 20 dollars
         totalCharge = 20
     elif dataUsage <= 500:
-        roc = 0.105
+        roc = 0.105 # This would be multiplied to the data usage the user enters to give the total charge
         totalCharge = roc * dataUsage
     elif dataUsage <= 1000:
         roc = 0.110
